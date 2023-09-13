@@ -56,9 +56,9 @@ function About() {
             </Tilt>
           </Col>
         </Row>
-        <h1 style={{marginTop: "100px"}} className="project-heading" id="huespedes">
+        <h1 style={{marginTop: "100px"}} className="project-heading">
           Algunos de nuestros{" "}
-          <strong style={{ color: "violet" }}>HUESPEDES </strong>
+          <strong id="huespedes" style={{ color: "violet" }}>HUESPEDES </strong>
         </h1>
 
         <Techstack />
