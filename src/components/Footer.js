@@ -10,16 +10,43 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+
+  // function handleInicio(params) {
+  //   const irInicio = document.getElementById("home");
+  //   irInicio.scrollIntoView({ behavior: "smooth", block: "start" });
+  // }
+
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} Sukrut Rahane</h3>
-        </Col>
-        <Col md="4" className="footer-body">
+        <Col md="4" className="footer-copywright"></Col>
+        <section
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Col md="4" className="footer-copywright">
+            <h3>Copyright © {year} </h3>
+            <h3>
+              Core:{" "}
+              <a href="https://github.com/sukrutrahane/Sukrut-Portfolio">
+                Sukrut Rahane
+              </a>{" "}
+              || <span> Design: Fernando Valls</span>
+            </h3>
+          </Col>
+          {/* <a href="#">
+            <img 
+              onClick={handleInicio}
+              src={inicio}
+              style={{ backgroundColor: "violet", borderRadius: "30px" }}
+            />
+          </a> */}
+        </section>
+        {/* <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
@@ -28,7 +55,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiFillGithub />
+                <AiFillInstagram />
               </a>
             </li>
             <li className="social-icons">
@@ -62,7 +89,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   );
