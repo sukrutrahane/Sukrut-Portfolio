@@ -1,35 +1,34 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { ImHeart, ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Sukrut Rahane </span>
-            from <span className="purple"> Nashik, India.</span>
-            <br /> I am a Third Year student pursuing B.E.
-            in Artificial intelligence & Data Science from Pune University.
-            <br />
-            Additionally, I am enthusiastic about Machine Learning.
-            <br />
-            <br />
-            Some of my hobbies are 
-          </p>
-          <ul>
+          <br />
+          <ul style={{fontSize: "35px"}}>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImHeart /> Atención personalizada
             </li>
+            <br />
             <li className="about-activity">
-              <ImPointRight /> Partying
+              <ImHeart /> Máximo un perrito por estadía
             </li>
+            <br />
             <li className="about-activity">
-              <ImPointRight /> EDM
+              <ImHeart /> Reporte diario
+            </li>
+            <br />
+            <li className="about-activity">
+              <ImHeart /> Aceptamos perritos medianos y pequeños
+            </li>
+            <br />
+            <li className="about-activity">
+              <ImHeart /> Estamos ubicados en el barrio de Villa Urquiza
             </li>
           </ul>
-          
         </blockquote>
       </Card.Body>
     </Card>

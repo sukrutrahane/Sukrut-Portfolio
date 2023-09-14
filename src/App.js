@@ -34,7 +34,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
